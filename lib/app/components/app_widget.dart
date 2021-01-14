@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../views/home_view.dart';
+
 class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,12 +13,7 @@ class AppWidget extends StatelessWidget {
         primaryColor: Colors.green,
         accentColor: Colors.yellow,
       ),
-      home: Scaffold(
-        appBar: AppBar(),
-        body: Center(
-          child: Text('Conversor de moedas'),
-        ),
-      ),
+      home: HomeView(),
     );
   }
 }
