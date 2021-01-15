@@ -8,12 +8,23 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Image.network(
-            img,
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        // color: Colors.red,
+        child: Padding(
+          padding:
+              const EdgeInsets.only(bottom: 10, left: 25, right: 25, top: 25),
+          child: Column(
+            children: [
+              // Img
+              Image.network(
+                img,
+                scale: 4,
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
