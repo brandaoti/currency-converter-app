@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class HomeView extends StatelessWidget {
   // * link com imagem provisoria
@@ -21,6 +22,40 @@ class HomeView extends StatelessWidget {
               Image.network(
                 img,
                 scale: 4,
+              ),
+
+              // TextField
+              TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  //hintText: 'Entre com o valor',
+                  labelText: 'Real',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+              ),
+              SizedBox(height: 5),
+              TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  //hintText: 'Entre com o valor',
+                  labelText: 'Dolar',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+              ),
+              SizedBox(height: 5),
+              TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  //hintText: 'Entre com o valor',
+                  labelText: 'Euro',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
               ),
             ],
           ),
