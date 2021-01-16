@@ -11,6 +11,9 @@ class CurrencyController {
   final dolarController = TextEditingController();
   final euroController = TextEditingController();
 
+  double dolar;
+  double euro;
+
   // Limpar campos
   void _clearFields() {
     realController.text = "";
@@ -20,14 +23,30 @@ class CurrencyController {
 
   // Método para mudar real
   void realChanged(String value) {
+    // ! Add metodo de limpar campos
+
+    // * Armazena o valor em Real passado no campo
     double real = double.parse(value);
 
-    dolarController.text = (real / currencyModel.dolar).toStringAsFixed(2);
+    dolarController.text = (real / this.dolar).toStringAsFixed(2);
+    euroController.text = (real / this.euro).toStringAsFixed(2);
   }
 
   // Método para muda dolar
-  void dolarChanged() {}
+  void dolarChanged(String value) {
+    // * Armazena o valor em Dolar passado no campo
+    double dolar = double.parse(value);
+
+    realController.text = (dolar * this.dolar).toStringAsFixed(2);
+    euroController.text = (dolar * this.dolar / this.euro).toStringAsFixed(2);
+  }
 
   // Método para muda euro
-  void euroChanged() {}
+  void euroChanged(String value) {
+    // * Armazena o valor em Euro passado no campo
+    double euro = double.parse(value);
+
+    realController.text = (euro * this.euro).toStringAsFixed(2);
+    dolarController.text = (euro * this.euro / this.dolar).toStringAsFixed(2);
+  }
 }
