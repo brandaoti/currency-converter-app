@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import '../components/custom_textfield.dart';
 
@@ -27,9 +26,15 @@ class HomeView extends StatelessWidget {
               ),
 
               // TextField
-              CustomTextField(),
-              CustomTextField(),
-              CustomTextField(),
+              CustomTextField(
+                image: 'assets/images/real.png',
+              ),
+              CustomTextField(
+                image: 'assets/images/dolar.png',
+              ),
+              CustomTextField(
+                image: 'assets/images/euro.png',
+              ),
             ],
           ),
         ),
