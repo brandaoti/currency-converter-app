@@ -27,13 +27,13 @@ class HomeView extends StatelessWidget {
 
               // TextField
               CustomTextField(
-                image: 'assets/images/real.png',
+                currencyIcon: 'assets/images/real.png',
               ),
               CustomTextField(
-                image: 'assets/images/dolar.png',
+                currencyIcon: 'assets/images/dolar.png',
               ),
               CustomTextField(
-                image: 'assets/images/euro.png',
+                currencyIcon: 'assets/images/euro.png',
               ),
             ],
           ),

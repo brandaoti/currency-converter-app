@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
   // Variaveis
-  final String name;
-  final String image;
+  final String currencyIcon;
+  final String currencyPrefixName;
 
   // Construtor
   CustomTextField({
-    this.image,
-    @required this.name,
+    this.currencyIcon,
+    @required this.currencyPrefixName,
   });
 
   // ! Add um Hint ou não
@@ -17,13 +17,14 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //
-    Widget _iconImg = Image.asset(image, scale: 2.5, color: Colors.green);
+    Widget _iconImg =
+        Image.asset(currencyIcon, scale: 2.5, color: Colors.green);
 
     return TextField(
       keyboardType: TextInputType.number,
       decoration: InputDecoration(
         icon: _iconImg,
-        labelText: name,
+        labelText: currencyPrefixName,
       ),
     );
   }
