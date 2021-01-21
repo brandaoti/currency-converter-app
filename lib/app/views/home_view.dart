@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 import '../components/custom_textfield.dart';
 import '../controllers/currency_controller.dart';
 
-class HomeView extends StatelessWidget {
+class HomeView extends StatefulWidget {
   // Instanciando controllers
+  @override
+  _HomeViewState createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
   final currencyController = CurrencyController();
 
   @override
