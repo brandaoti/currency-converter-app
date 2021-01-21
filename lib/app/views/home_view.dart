@@ -4,10 +4,6 @@ import '../components/custom_textfield.dart';
 import '../controllers/currency_controller.dart';
 
 class HomeView extends StatelessWidget {
-  // * link com imagem provisoria
-  final String img =
-      "https://imagensemoldes.com.br/wp-content/uploads/2020/04/money-png.png";
-
   // Instanciando controllers
   final currencyController = CurrencyController();
 
@@ -20,14 +16,13 @@ class HomeView extends StatelessWidget {
         // color: Colors.red,
         child: Padding(
           padding:
-              const EdgeInsets.only(bottom: 10, left: 25, right: 25, top: 25),
+              const EdgeInsets.only(bottom: 10, left: 25, right: 25, top: 75),
           child: Column(
             children: [
               // Img
-              Image.network(
-                img,
-                scale: 4,
-              ),
+              Image.asset('assets/images/logo.png', scale: 3),
+
+              SizedBox(height: 20.0),
 
               // TextField
               CustomTextField(
