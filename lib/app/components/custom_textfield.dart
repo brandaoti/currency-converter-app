@@ -24,10 +24,11 @@ class CustomTextField extends StatelessWidget {
 
     //
     Widget _prefixIcon = Container(
+      height: 20,
+      width: 20,
       alignment: Alignment.centerLeft,
-      width: 10,
-      height: 10,
-      child: Text('BRL'),
+      decoration: BoxDecoration(shape: BoxShape.circle),
+      child: Text(currencyPrefixName),
     );
 
     //
