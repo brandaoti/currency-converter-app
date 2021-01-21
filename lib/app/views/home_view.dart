@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
+import '../components/custom_textfield.dart';
+import '../controllers/currency_controller.dart';
 
 class HomeView extends StatelessWidget {
-  // * link com imagem provisoria
-  final String img =
-      "https://imagensemoldes.com.br/wp-content/uploads/2020/04/money-png.png";
+  // Instanciando controllers
+  final currencyController = CurrencyController();
 
   @override
   Widget build(BuildContext context) {
@@ -15,47 +16,32 @@ class HomeView extends StatelessWidget {
         // color: Colors.red,
         child: Padding(
           padding:
-              const EdgeInsets.only(bottom: 10, left: 25, right: 25, top: 25),
+              const EdgeInsets.only(bottom: 10, left: 25, right: 25, top: 75),
           child: Column(
             children: [
               // Img
-              Image.network(
-                img,
-                scale: 4,
-              ),
+              Image.asset('assets/images/logo.png', scale: 3),
+
+              SizedBox(height: 20.0),
 
               // TextField
-              TextField(
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                  //hintText: 'Entre com o valor',
-                  labelText: 'Real',
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                ),
+              CustomTextField(
+                controller: currencyController.realController,
+                currencyIcon: 'assets/images/real.png',
+                currencyPrefixName: 'BRL',
+                onChanged: currencyController.realChanged,
               ),
-              SizedBox(height: 5),
-              TextField(
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                  //hintText: 'Entre com o valor',
-                  labelText: 'Dolar',
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                ),
+              CustomTextField(
+                controller: currencyController.dolarController,
+                currencyIcon: 'assets/images/dolar.png',
+                currencyPrefixName: 'USD',
+                onChanged: currencyController.dolarChanged,
               ),
-              SizedBox(height: 5),
-              TextField(
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                  //hintText: 'Entre com o valor',
-                  labelText: 'Euro',
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                ),
+              CustomTextField(
+                controller: currencyController.euroController,
+                currencyIcon: 'assets/images/euro.png',
+                currencyPrefixName: 'EUR',
+                onChanged: currencyController.euroChanged,
               ),
             ],
           ),
