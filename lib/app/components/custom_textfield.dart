@@ -3,16 +3,18 @@ import 'package:flutter/material.dart';
 class CustomTextField extends StatelessWidget {
   // Variaveis
   final String currencyIcon;
-  final String currencyPrefixName;
+  final String currencyPrefixText;
+  final Function onChanged;
+
+  final TextEditingController controller;
 
   // Construtor
   CustomTextField({
     this.currencyIcon,
-    @required this.currencyPrefixName,
+    @required this.currencyPrefixText,
+    @required this.onChanged,
+    @required this.controller,
   });
-
-  // ! Add um Hint ou não
-  // !
 
   @override
   Widget build(BuildContext context) {
@@ -22,9 +24,11 @@ class CustomTextField extends StatelessWidget {
 
     return TextField(
       keyboardType: TextInputType.number,
+      controller: controller,
+      onChanged: onChanged,
       decoration: InputDecoration(
         icon: _iconImg,
-        labelText: currencyPrefixName,
+        prefixText: currencyPrefixText,
       ),
     );
   }
