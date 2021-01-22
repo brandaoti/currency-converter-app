@@ -23,7 +23,10 @@ class CurrencyController {
 
   // Método para mudar real
   void realChanged(String value) {
-    // ! Add metodo de limpar campos
+    // * Verifica e limpar os campos
+    if (value.isEmpty) {
+      _clearFields();
+    }
 
     // * Armazena o valor em Real passado no campo
     double real = double.parse(value);
@@ -34,6 +37,11 @@ class CurrencyController {
 
   // Método para muda dolar
   void dolarChanged(String value) {
+    // * Verifica e limpar os campos
+    if (value.isEmpty) {
+      _clearFields();
+    }
+
     // * Armazena o valor em Dolar passado no campo
     double dolar = double.parse(value);
 
@@ -43,6 +51,11 @@ class CurrencyController {
 
   // Método para muda euro
   void euroChanged(String value) {
+    // * Verifica e limpar os campos
+    if (value.isEmpty) {
+      _clearFields();
+    }
+
     // * Armazena o valor em Euro passado no campo
     double euro = double.parse(value);
 
