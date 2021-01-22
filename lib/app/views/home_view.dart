@@ -25,59 +25,73 @@ class _HomeViewState extends State<HomeView> {
           // ! Verificar conexão da  API
 
           switch (snapshot.connectionState) {
-            case ConnectionState.done:
+            case ConnectionState.none:
 
             case ConnectionState.waiting:
-              return Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Center(
-                    child: Text('Carregando dados...', textScaleFactor: 1.5),
+              return Center(
+                child: Container(
+                  height: 100,
+                  width: MediaQuery.of(context).size.width,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    // crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text('Carregando dados...', textScaleFactor: 1.5),
+                      CircularProgressIndicator(),
+                    ],
                   ),
-
-                  // progress bar
-                  CircularProgressIndicator(backgroundColor: Colors.red),
-                ],
+                ),
               );
+
+            default:
+              if (snapshot.hasError) {
+                return Center(child: Text('Erro ao carregar dados!'));
+              } else {
+                //* Recuperar valores da API
+                currencyController.dolar =
+                    snapshot.data["results"]["currencies"]["USD"]["buy"];
+                currencyController.euro =
+                    snapshot.data["results"]["currencies"]["EUR"]["buy"];
+
+                return Container(
+                  height: MediaQuery.of(context).size.height,
+                  width: MediaQuery.of(context).size.width,
+                  // color: Colors.red,
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        bottom: 10, left: 25, right: 25, top: 75),
+                    child: Column(
+                      children: [
+                        // Img
+                        Image.asset('assets/images/logo.png', scale: 3),
+
+                        SizedBox(height: 20.0),
+
+                        // TextField
+                        CustomTextField(
+                          controller: currencyController.realController,
+                          currencyIcon: 'assets/images/real.png',
+                          currencyPrefixName: 'BRL',
+                          onChanged: currencyController.realChanged,
+                        ),
+                        CustomTextField(
+                          controller: currencyController.dolarController,
+                          currencyIcon: 'assets/images/dolar.png',
+                          currencyPrefixName: 'USD',
+                          onChanged: currencyController.dolarChanged,
+                        ),
+                        CustomTextField(
+                          controller: currencyController.euroController,
+                          currencyIcon: 'assets/images/euro.png',
+                          currencyPrefixName: 'EUR',
+                          onChanged: currencyController.euroChanged,
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }
           }
-
-          return Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            // color: Colors.red,
-            child: Padding(
-              padding: const EdgeInsets.only(
-                  bottom: 10, left: 25, right: 25, top: 75),
-              child: Column(
-                children: [
-                  // Img
-                  Image.asset('assets/images/logo.png', scale: 3),
-
-                  SizedBox(height: 20.0),
-
-                  // TextField
-                  CustomTextField(
-                    controller: currencyController.realController,
-                    currencyIcon: 'assets/images/real.png',
-                    currencyPrefixName: 'BRL',
-                    onChanged: currencyController.realChanged,
-                  ),
-                  CustomTextField(
-                    controller: currencyController.dolarController,
-                    currencyIcon: 'assets/images/dolar.png',
-                    currencyPrefixName: 'USD',
-                    onChanged: currencyController.dolarChanged,
-                  ),
-                  CustomTextField(
-                    controller: currencyController.euroController,
-                    currencyIcon: 'assets/images/euro.png',
-                    currencyPrefixName: 'EUR',
-                    onChanged: currencyController.euroChanged,
-                  ),
-                ],
-              ),
-            ),
-          );
         },
       ),
     );
