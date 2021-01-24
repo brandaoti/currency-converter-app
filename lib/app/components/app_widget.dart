@@ -12,6 +12,7 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.green,
         accentColor: Colors.yellow,
+        brightness: Brightness.dark,
       ),
       home: HomeView(),
     );
