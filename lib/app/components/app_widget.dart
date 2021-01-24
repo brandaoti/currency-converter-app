@@ -10,7 +10,7 @@ class AppWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Conversor de moedas',
       theme: ThemeData(
-        primaryColor: Colors.green,
+        //primaryColor: Colors.green,
         accentColor: Colors.yellow,
         brightness: Brightness.dark,
       ),
