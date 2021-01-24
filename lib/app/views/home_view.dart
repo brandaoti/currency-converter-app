@@ -11,8 +11,6 @@ class HomeView extends StatefulWidget {
   _HomeViewState createState() => _HomeViewState();
 }
 
-// ! Criar um futureBuilder para retornar os dados da API
-
 class _HomeViewState extends State<HomeView> {
   final currencyController = CurrencyController();
   final currencyApi = CurrencyApi();
