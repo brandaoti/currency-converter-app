@@ -19,8 +19,11 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //
-    Widget _iconImg =
-        Image.asset(currencyIcon, scale: 2.5, color: Colors.green);
+    // Widget _iconImg = Image.asset(
+    //   currencyIcon,
+    //   scale: 2.5,
+    //   color: Colors.greenAccent,
+    // );
 
     //
     Widget _prefixIcon = Container(
@@ -33,15 +36,34 @@ class CustomTextField extends StatelessWidget {
 
     //
     InputDecoration _inputDecoration = InputDecoration(
-      icon: _iconImg,
       prefixIcon: _prefixIcon,
     );
 
-    return TextField(
-      keyboardType: TextInputType.number,
-      controller: controller,
-      onChanged: onChanged,
-      decoration: _inputDecoration,
+    return Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Row(
+        children: [
+          //
+          Image.asset(
+            currencyIcon,
+            scale: 2.5,
+            color: Colors.greenAccent,
+          ),
+
+          SizedBox(width: 20),
+
+          //
+          Container(
+            width: 280,
+            child: TextField(
+              keyboardType: TextInputType.number,
+              controller: controller,
+              onChanged: onChanged,
+              decoration: _inputDecoration,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
