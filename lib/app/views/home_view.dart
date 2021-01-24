@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../components/custom_textfield.dart';
+import '../components/currency_logo.dart';
 import '../controllers/currency_controller.dart';
 import '../utils/currency_api.dart';
 
@@ -62,8 +63,8 @@ class _HomeViewState extends State<HomeView> {
                         bottom: 10, left: 25, right: 25, top: 75),
                     child: Column(
                       children: [
-                        // Img
-                        Image.asset('assets/images/logo.png', scale: 3),
+                        // Instanciando logo do app
+                        CurrencyLogo(),
 
                         SizedBox(height: 20.0),
 
