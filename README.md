@@ -1,16 +1,59 @@
-# currency_converter_app
+<h1 align="center">
+<br>
+  <img src="github-screenshots/logo.png" alt="Currency" width="120">
+<br>
+<br>
+   Conversor de Moedas 
+</h1>
 
-A new Flutter project.
+<p align="center"> Aplicativo para fazer conversão de moedas... <br> ...real, dolar e euro!
+</p>
 
-## Getting Started
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>  
 
-This project is a starting point for a Flutter application.
+[//]: # (Adicione seus gifs / imagens aqui:)
+<div>
+  <!-- <img src="IMAGE_1_URL" alt="demo" height="425">
+  <img src="IMAGE_2_URL" alt="demo" height="425"> -->
+</div>
 
-A few resources to get you started if this is your first Flutter project:
+<hr />
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## **Informações:**
+[//]: # (Descreva seu objetivo e o que foi usado no projeto:)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    * Projeto criado com objetivo de desenvolver habilidades no desenvolvimento de aplicativos com Flutter.
+    
+    * Minha principal dificuldade no desenvolvimento do projeto, foi fazer a recuperação dos dados para serem exibidos na tela.
+
+    * OBS: Este projeto, não foi otimizado para IOs, porém pode rodar normalmente.
+
+- **[HG-Finance: Api](https://console.hgbrasil.com/documentation/finance)** - Foi usado uma API na requisição de valores do Dólar e Euro, para serem consumidas no APP. 
+
+<hr />
+
+<!-- ## **How to reach me:**
+[//]: # (Adicione suas redes:)
+
+[Instagram - Pessoal](https://www.instagram.com/dannbrandao_)
+
+<hr /> -->
+
+## **Linguagens e Ferramentas:**
+[//]: # (Adicione os recursos do seu projeto aqui:)
+
+- <code><img height="20" src="https://github.com/brandaoti/organizar-github/blob/main/img/flutter.png"></code> **Flutter**
+- <code><img height="20" src="https://github.com/brandaoti/organizar-github/blob/main/img/dart.png"></code> **Dart**
+
+<hr />
+
+## Iniciar Projeto
+[//]: # (Descreva aqui a forma de usar / instalar seu projeto:)
+
+## License
+
+Este projeto está licenciado sob a Licença MIT - consulte a [LICENSE](https://choosealicense.com/licenses/mit/) página para detalhes.
