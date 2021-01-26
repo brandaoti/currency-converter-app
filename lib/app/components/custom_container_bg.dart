@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
 
 // ! Criando um Gradient para usar como background do app
-class CustomContainer extends StatelessWidget {
+class CustomContainerBG extends StatelessWidget {
   //
   final Widget child;
+  final double height;
+  final double width;
 
-  const CustomContainer({@required this.child});
+  const CustomContainerBG({
+    this.height,
+    this.width,
+    @required this.child,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: height,
+      width: width,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
