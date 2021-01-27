@@ -20,11 +20,13 @@ class CustomContainerBG extends StatelessWidget {
       width: width,
       decoration: BoxDecoration(
         gradient: LinearGradient(
+          begin: Alignment.topCenter,
           colors: [
-            Colors.red,
-            Colors.blue,
-            Colors.green,
+            Color(0xFF282828),
+            Color(0xFF282828),
+            Color(0xFF282828),
           ],
+          end: Alignment.bottomCenter,
         ),
       ),
       child: child,

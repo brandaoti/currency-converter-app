@@ -53,7 +53,7 @@ class _HomeViewState extends State<HomeView> {
                 currencyController.euro =
                     snapshot.data["results"]["currencies"]["EUR"]["buy"];
 
-                return CustomContainerBG(
+                return Container(
                   // * MediaQuery
                   height: MediaQuery.of(context).size.height,
                   width: MediaQuery.of(context).size.width,
