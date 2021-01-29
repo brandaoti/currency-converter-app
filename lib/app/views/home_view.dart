@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../components/custom_textfield.dart';
 import '../components/currency_logo.dart';
 import '../controllers/currency_controller.dart';
-import '../components/custom_container_bg.dart';
+import '../components/custom_text.dart';
 import '../utils/currency_api.dart';
 
 class HomeView extends StatefulWidget {
@@ -66,23 +66,8 @@ class _HomeViewState extends State<HomeView> {
                         // Instanciando logo do app
                         CurrencyLogo(),
 
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
-                          child: Container(
-                            color: Colors.green,
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 5.0, vertical: 3.0),
-                            child: FittedBox(
-                              child: Text(
-                                'Veja a cotação atual do Dolar e Euro',
-                                style: TextStyle(
-                                  color: Colors.grey[50],
-                                  fontSize: 14,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
+                        // Instanciando Text com mensagem
+                        CustomText(),
 
                         SizedBox(height: 20.0),
 
