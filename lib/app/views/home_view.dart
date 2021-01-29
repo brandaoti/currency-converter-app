@@ -66,6 +66,24 @@ class _HomeViewState extends State<HomeView> {
                         // Instanciando logo do app
                         CurrencyLogo(),
 
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Container(
+                            color: Colors.green,
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 5.0, vertical: 3.0),
+                            child: FittedBox(
+                              child: Text(
+                                'Veja a cotação atual do Dolar e Euro',
+                                style: TextStyle(
+                                  color: Colors.grey[50],
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+
                         SizedBox(height: 20.0),
 
                         // TextField
