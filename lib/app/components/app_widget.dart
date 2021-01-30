@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../routes/app_routes.dart';
 import '../views/home_view.dart';
 
 class AppWidget extends StatelessWidget {
@@ -10,10 +11,14 @@ class AppWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Conversor de moedas',
       theme: ThemeData(
-        primaryColor: Colors.green,
         accentColor: Colors.yellow,
+        brightness: Brightness.dark,
       ),
-      home: HomeView(),
+
+      // home: HomeView(),
+      routes: {
+        AppRoutes.HOME: (ctx) => HomeView(),
+      },
     );
   }
 }

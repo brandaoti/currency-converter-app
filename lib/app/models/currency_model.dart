@@ -4,5 +4,5 @@ class CurrencyModel {
   final double dolar;
   final double euro;
 
-  CurrencyModel(this.real, this.dolar, this.euro);
+  CurrencyModel({this.real, this.dolar, this.euro});
 }
