@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../routes/app_routes.dart';
 import '../views/home_view.dart';
 
 class AppWidget extends StatelessWidget {
@@ -13,7 +14,11 @@ class AppWidget extends StatelessWidget {
         accentColor: Colors.yellow,
         brightness: Brightness.dark,
       ),
-      home: HomeView(),
+
+      // home: HomeView(),
+      routes: {
+        AppRoutes.HOME: (ctx) => HomeView(),
+      },
     );
   }
 }
