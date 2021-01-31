@@ -45,7 +45,20 @@ class _HomeViewState extends State<HomeView> {
 
             default:
               if (snapshot.hasError) {
-                return Center(child: Text('Erro ao carregar dados!'));
+                return Center(
+                  child: Container(
+                    height: 100,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Text('Erro ao carregar dados!', textScaleFactor: 1.5),
+
+                        // ! Trocar por um botão para atualizar
+                        Icon(Icons.refresh, size: 30),
+                      ],
+                    ),
+                  ),
+                );
               } else {
                 //* Recuperar valores da API
                 currencyController.dolar =
