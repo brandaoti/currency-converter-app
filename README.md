@@ -26,11 +26,9 @@
 ## **Informações:**
 [//]: # (Descreva seu objetivo e o que foi usado no projeto:)
 
-    * Projeto criado com objetivo de desenvolver habilidades no desenvolvimento de aplicativos com Flutter.
-    
-    * Minha principal dificuldade no desenvolvimento do projeto, foi fazer a recuperação dos dados para serem exibidos na tela.
-
-    * OBS: Este projeto, não foi otimizado para IOs, porém pode rodar normalmente.
+* Projeto criado com objetivo de desenvolver habilidades no desenvolvimento de aplicativos com Flutter.
+* Minha principal dificuldade no desenvolvimento do projeto, foi fazer a recuperação dos dados para serem exibidos na tela.
+* OBS: Este projeto, não foi otimizado para IOs, porém pode rodar normalmente.
 
 - **[HG-Finance: Api](https://console.hgbrasil.com/documentation/finance)** - Foi usado uma API na requisição de valores do Dólar e Euro, para serem consumidas no APP. 
 
