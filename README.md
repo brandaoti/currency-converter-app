@@ -18,14 +18,18 @@
 [//]: # (Adicione seus gifs / imagens aqui:)
 
 <p align="center"> 
-  <img src="github-screenshots/app.gif" alt="demo" height="800"> 
+  <img src="github-screenshots/app.gif" alt="demo" height="600"> 
 </p>
 
+
 <div>
-  <img src="github-screenshots/loading_screen.jpeg" alt="demo" height="500">
-  <img src="github-screenshots/home_screen.jpeg" alt="demo" height="500">
-  <img src="github-screenshots/error_screen.jpeg" alt="demo" height="500">
+  <p alignt="center">
+  <img src="github-screenshots/loading_screen.jpeg" alt="demo" height="425">
+  <img src="github-screenshots/home_screen.jpeg" alt="demo" height="425">
+  <img src="github-screenshots/error_screen.jpeg" alt="demo" height="425">
+    </p>
 </div>
+
 
 <hr />
 
