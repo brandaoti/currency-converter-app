@@ -24,9 +24,9 @@
 
 <div>
   <p alignt="center">
-  <img src="github-screenshots/loading_screen.jpeg" alt="demo" height="425">
-  <img src="github-screenshots/home_screen.jpeg" alt="demo" height="425">
-  <img src="github-screenshots/error_screen.jpeg" alt="demo" height="425">
+  <img src="github-screenshots/loading_screen.jpeg" alt="demo" height="600">
+  <img src="github-screenshots/home_screen.jpeg" alt="demo" height="600">
+  <img src="github-screenshots/error_screen.jpeg" alt="demo" height="600">
     </p>
 </div>
 
