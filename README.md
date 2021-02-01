@@ -2,7 +2,6 @@
 <br>
   <img src="github-screenshots/logo.png" alt="Currency" width="120">
 <br>
-<br>
    Conversor de Moedas 
 </h1>
 
@@ -16,21 +15,28 @@
 </p>  
 
 [//]: # (Adicione seus gifs / imagens aqui:)
-<div>
-  <!-- <img src="IMAGE_1_URL" alt="demo" height="425">
-  <img src="IMAGE_2_URL" alt="demo" height="425"> -->
-</div>
+
+<p align="center"> 
+  <img src="github-screenshots/app.gif" alt="demo" height="600"> 
+</p>
+
+
+<p align="center">
+  <br>
+  <img src="github-screenshots/loading_screen.jpeg" alt="demo" height="500">
+  <img src="github-screenshots/home_screen.jpeg" alt="demo" height="500">
+  <img src="github-screenshots/error_screen.jpeg" alt="demo" height="500">
+</p>
+
 
 <hr />
 
 ## **Informações:**
 [//]: # (Descreva seu objetivo e o que foi usado no projeto:)
 
-    * Projeto criado com objetivo de desenvolver habilidades no desenvolvimento de aplicativos com Flutter.
-    
-    * Minha principal dificuldade no desenvolvimento do projeto, foi fazer a recuperação dos dados para serem exibidos na tela.
-
-    * OBS: Este projeto, não foi otimizado para IOs, porém pode rodar normalmente.
+* Projeto criado com objetivo de desenvolver habilidades no desenvolvimento de aplicativos com Flutter.
+* Minha principal dificuldade no desenvolvimento do projeto, foi fazer a recuperação dos dados para serem exibidos na tela.
+* OBS: Este projeto, não foi otimizado para IOs, porém pode rodar normalmente.
 
 - **[HG-Finance: Api](https://console.hgbrasil.com/documentation/finance)** - Foi usado uma API na requisição de valores do Dólar e Euro, para serem consumidas no APP. 
 
@@ -53,6 +59,13 @@
 
 ## Iniciar Projeto
 [//]: # (Descreva aqui a forma de usar / instalar seu projeto:)
+
+1° Clone este repo usando: git clone `https://github.com/brandaoti/currency-converter-app.git` <br />
+2° Mova-se para o diretório apropriado: `cd currency-converter-app` <br />
+3° digite `flutter run` para instalar as dependência e apk <br />
+
+* ### IMPORTANTE: antes do 3° passo <strong>conectar um aparelho físico via cabo ou emulador</strong>.
+        
 
 ## License
 
