@@ -2,7 +2,6 @@
 <br>
   <img src="github-screenshots/logo.png" alt="Currency" width="120">
 <br>
-<br>
    Conversor de Moedas 
 </h1>
 
@@ -22,13 +21,12 @@
 </p>
 
 
-<div>
-  <p alignt="center">
+<p align="center">
+  <br>
   <img src="github-screenshots/loading_screen.jpeg" alt="demo" height="600">
   <img src="github-screenshots/home_screen.jpeg" alt="demo" height="600">
   <img src="github-screenshots/error_screen.jpeg" alt="demo" height="600">
-    </p>
-</div>
+</p>
 
 
 <hr />
