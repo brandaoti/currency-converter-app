@@ -60,6 +60,13 @@
 ## Iniciar Projeto
 [//]: # (Descreva aqui a forma de usar / instalar seu projeto:)
 
+1° Clone este repo usando: git clone `https://github.com/brandaoti/currency-converter-app.git` <br />
+2° Mova-se para o diretório apropriado: `cd currency-converter-app` <br />
+3° digite `flutter run` para instalar as dependência e apk <br />
+
+* ### Obs: Importante: antes do 3° passo <strong>conectar um aparelho físico via cabo ou emulador</strong>.
+        
+
 ## License
 
 Este projeto está licenciado sob a Licença MIT - consulte a [LICENSE](https://choosealicense.com/licenses/mit/) página para detalhes.
