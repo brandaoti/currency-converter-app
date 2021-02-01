@@ -16,9 +16,15 @@
 </p>  
 
 [//]: # (Adicione seus gifs / imagens aqui:)
+
+<p align="center"> 
+  <img src="github-screenshots/app.gif" alt="demo" height="850"> 
+</p>
+
 <div>
-  <!-- <img src="IMAGE_1_URL" alt="demo" height="425">
-  <img src="IMAGE_2_URL" alt="demo" height="425"> -->
+  <img src="github-screenshots/loading_screen.jpeg" alt="demo" height="600">
+  <img src="github-screenshots/home_screen.jpeg" alt="demo" height="600">
+  <img src="github-screenshots/error_screen.jpeg" alt="demo" height="600">
 </div>
 
 <hr />
