@@ -64,7 +64,7 @@
 2° Mova-se para o diretório apropriado: `cd currency-converter-app` <br />
 3° digite `flutter run` para instalar as dependência e apk <br />
 
-* ### IMPORTANTE: antes do 3° passo <strong>conectar um aparelho físico via cabo ou emulador</strong>.
+* ### IMPORTANTE: antes do 3° passo, <strong>conectar um aparelho físico via cabo ou emulador</strong>.
         
 
 ## License
